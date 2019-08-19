@@ -1,0 +1,391 @@
+Name: Test2
+Courses: 52
+Rooms: 12
+Days: 5
+Periods_per_day: 4
+Curricula: 30
+Min_Max_Daily_Lectures: 2 4
+UnavailabilityConstraints: 148
+RoomConstraints: 128
+
+COURSES:
+Fis1C Verdi 5 5 120 0
+Fis1E Rossini 5 5 120 0
+Fis1G Verdi 5 5 120 0
+Fis1M Bellini 5 5 120 0
+FonInfC Corelli 3 3 120 0
+FonInfE Donizetti 3 3 120 0
+MecRazC Puccini 5 4 100 1
+TecMat Tartini 5 4 100 1
+FisAmb Piranesi 5 4 80 1
+GeoApp Vivaldi 5 4 30 1
+Idro Monteverdi 5 4 30 1
+StoArc Allegri 5 4 30 1
+TecUrb Albinoni 5 4 40 0
+TeoStr Boccherini 5 4 30 0
+ProStr Carulli 5 3 30 1
+ArcCom Cherubini 5 4 30 1
+CosStr Cimarosa 5 4 40 1
+DinStr Clementi 5 4 30 1
+IngSan Mascagni 3 3 30 0
+IngSanLab Mascagni 2 1 30 0
+SisApp Monti 5 4 30 1
+RetLog da_Palestrina 5 4 100 1
+FisTecE Paisiello 5 4 90 1
+ConAutE Pergolesi 5 4 90 1
+ModNum Ponchielli 5 4 80 1
+CalEle Sacchini 5 4 80 1
+DisTec Sammartini 5 4 100 1
+MecRazG Scarlatti 5 4 100 1
+EltecG Stradella 5 4 80 1
+FisTec Traetta 5 4 80 0
+ConAutG Viotti 5 4 80 0
+OrgPro Vitali 5 4 80 1
+SisEla Berio 5 4 80 1
+DisMac Bononcini 5 4 100 1
+EltecM Bonporti 5 4 80 1
+FisTecM Bottesini 5 4 80 1
+TecMecI Brunetti 5 4 80 0
+DisAss Cafaro 5 4 70 0
+ProMac Caccini 5 4 70 0
+MecSol Carissimi 3 3 20 0
+Fluido Cifariello 3 3 20 0
+IdraDAUR Conti 3 3 20 0
+IngChi Dall'Abaco 3 3 20 0
+CamEle Draghi 3 2 20 1
+AziEle Duni 3 3 20 0
+EcoOrg Fantini 3 3 20 0
+EleInd Ferrabosco 3 3 20 0
+CCIAA2 Franceschini 2 1 20 0
+CCIAA3 Franceschini 2 1 20 0
+Chimica Freschi 5 4 30 1
+Inglese Frescobaldi 2 1 20 1
+Inglese2 Pacini 2 1 20 1
+
+ROOMS:
+rA 312 2
+rB 216 0
+rD 216 2
+rE 216 0
+rF 216 1
+rL 312 0
+r27 105 1
+r29 30 0
+r30 32 1
+r31 50 0
+r36 42 1
+r37 42 0
+
+CURRICULA:
+Civile1 2 Fis1C FonInfC 
+LaureaCivile2 2 MecRazC TecMat 
+LaureaCivile3 2 EltecM FisAmb 
+LaureaCivile4a1 2 TecUrb ProStr 
+LaureaCivile4a2 2 TecUrb StoArc 
+LaureaCivile4b 2 TecUrb GeoApp 
+LaureaCivile4c 2 TecUrb Idro 
+LaureaCivile4d 2 TecUrb TeoStr 
+LaureaCivile5a 2 CosStr ArcCom 
+LaureaCivile5b 2 CosStr SisApp 
+LaureaCivile5c 3 CosStr IngSan IngSanLab 
+LaureaCivile5d 2 CosStr DinStr 
+Elettronica1 2 Fis1E FonInfE 
+LaureaElettronica2 2 RetLog MecRazG 
+LaureaElettronica3 2 FisTecE ConAutE 
+LaureaElettronica4 2 ModNum CalEle 
+GestionaleA1 2 Fis1G FonInfE 
+LaureaGestionale2 2 DisTec MecRazG 
+LaureaGestionale3 2 EltecG FisTec 
+LaureaGestionale4 2 ConAutG TecMecI 
+LaureaGestionale5a 4 OrgPro SisEla AziEle EleInd 
+LaureaGestionale5b 2 OrgPro SisEla 
+Meccanica1 2 Fis1M FonInfC 
+LaureaMeccanica2 3 DisMac MecRazC Chimica 
+LaureaMeccanica3 2 EltecM FisTecM 
+LaureaMeccanica5 2 DisAss ProMac 
+DiplomaAmbiente2 4 MecSol Fluido FisAmb Inglese 
+DiplomaAmbiente3 5 IdraDAUR Idro IngChi IngSan Inglese 
+DiplomaElettronica2 4 ConAutE CamEle Inglese CCIAA2 
+DiplomaElettronica3 5 AziEle EcoOrg EleInd Inglese2 CCIAA3 
+
+UNAVAILABILITY_CONSTRAINTS:
+MecRazC 4 0 
+MecRazC 4 1 
+MecRazC 4 2 
+MecRazC 4 3 
+TecMat 0 0 
+TecMat 4 0 
+TecMat 4 1 
+TecMat 4 2 
+TecMat 4 3 
+FisAmb 4 0 
+FisAmb 4 1 
+FisAmb 4 2 
+FisAmb 4 3 
+StoArc 0 0 
+StoArc 0 1 
+StoArc 0 2 
+StoArc 0 3 
+ProStr 0 0 
+ProStr 0 1 
+ProStr 0 2 
+ProStr 0 3 
+ArcCom 0 0 
+ArcCom 0 1 
+ArcCom 0 2 
+ArcCom 0 3 
+CosStr 0 0 
+CosStr 4 0 
+CosStr 4 1 
+CosStr 4 2 
+CosStr 4 3 
+CosStr 0 3 
+CosStr 1 3 
+CosStr 2 2 
+CosStr 2 3 
+CosStr 3 3 
+CosStr 4 0 
+CosStr 4 1 
+CosStr 4 2 
+CosStr 4 3 
+IngSan 4 0 
+IngSan 4 1 
+IngSan 4 2 
+IngSan 4 3 
+SisApp 4 0 
+SisApp 4 1 
+SisApp 4 2 
+SisApp 4 3 
+RetLog 0 0 
+RetLog 0 1 
+RetLog 0 2 
+RetLog 0 3 
+RetLog 1 1 
+RetLog 2 0 
+RetLog 4 3 
+FisTecE 0 0 
+FisTecE 4 0 
+FisTecE 4 1 
+FisTecE 4 2 
+FisTecE 4 3 
+ModNum 0 0 
+ModNum 4 0 
+ModNum 4 1 
+ModNum 4 2 
+ModNum 4 3 
+DisTec 0 0 
+DisTec 0 1 
+DisTec 0 2 
+DisTec 0 3 
+ConAutG 4 0 
+ConAutG 4 1 
+ConAutG 4 2 
+ConAutG 4 3 
+AziEle 0 0 
+AziEle 0 1 
+AziEle 0 2 
+AziEle 0 3 
+AziEle 1 0 
+AziEle 1 1 
+AziEle 1 2 
+AziEle 1 3 
+EleInd 0 0 
+EleInd 0 1 
+EleInd 0 2 
+EleInd 0 3 
+EleInd 1 0 
+EleInd 1 1 
+EleInd 4 0 
+EleInd 4 1 
+EleInd 4 2 
+EleInd 4 3 
+DisMac 4 0 
+DisMac 4 1 
+DisMac 4 2 
+DisMac 4 3 
+EltecM 0 0 
+EltecM 1 0 
+EltecM 2 0 
+EltecM 2 1 
+EltecM 2 2 
+EltecM 2 3 
+EltecM 3 0 
+EltecM 4 0 
+FisTecM 2 0 
+FisTecM 2 1 
+FisTecM 2 2 
+FisTecM 2 3 
+DisAss 2 0 
+DisAss 2 1 
+DisAss 4 0 
+DisAss 4 1 
+DisAss 4 2 
+DisAss 4 3 
+ProMac 4 0 
+ProMac 4 1 
+ProMac 4 2 
+ProMac 4 3 
+MecSol 0 0 
+MecSol 0 1 
+MecSol 0 2 
+MecSol 0 3 
+MecSol 1 0 
+MecSol 1 1 
+MecSol 1 2 
+MecSol 1 3 
+Fluido 0 0 
+Fluido 4 0 
+Fluido 4 1 
+Fluido 4 2 
+Fluido 4 3 
+IngChi 0 0 
+IngChi 4 0 
+IngChi 4 1 
+IngChi 4 2 
+IngChi 4 3 
+CamEle 0 0 
+CamEle 0 1 
+CamEle 0 2 
+CamEle 0 3 
+CamEle 1 0 
+CamEle 1 1 
+CamEle 4 0 
+CamEle 4 1 
+CamEle 4 2 
+CamEle 4 3 
+Chimica 4 0 
+Chimica 4 1 
+Chimica 4 2 
+Chimica 4 3 
+
+ROOM_CONSTRAINTS:
+Fis1C rB
+Fis1C r27
+Fis1C r29
+Fis1E r30
+Fis1E r31
+Fis1G r29
+Fis1M rD
+Fis1M r31
+Fis1M r36
+Fis1M r37
+FonInfC rE
+FonInfC r27
+FonInfC r37
+FonInfE rD
+FonInfE r29
+FonInfE r37
+MecRazC r29
+MecRazC r37
+FisAmb r30
+FisAmb r31
+GeoApp rA
+GeoApp rL
+GeoApp r29
+Idro r29
+TecUrb rD
+TecUrb rE
+TecUrb rF
+TecUrb rL
+TecUrb r37
+TeoStr rA
+TeoStr rB
+TeoStr r31
+ProStr r29
+ProStr r30
+ProStr r31
+ProStr r37
+ArcCom r27
+CosStr rA
+CosStr rL
+DinStr r37
+IngSan rD
+IngSan rL
+IngSan r30
+IngSanLab rA
+IngSanLab rE
+IngSanLab r27
+IngSanLab r29
+SisApp rE
+SisApp rF
+FisTecE rE
+FisTecE r36
+ConAutE rD
+ConAutE rE
+ConAutE rF
+ConAutE r27
+ConAutE r31
+CalEle r29
+CalEle r37
+DisTec rE
+DisTec r27
+DisTec r36
+MecRazG r30
+MecRazG r36
+EltecG rB
+EltecG rD
+EltecG rE
+EltecG r27
+FisTec rA
+FisTec rF
+FisTec r27
+FisTec r31
+ConAutG rB
+ConAutG rE
+ConAutG r37
+OrgPro rE
+OrgPro rF
+OrgPro r31
+SisEla rD
+SisEla rE
+SisEla rL
+DisMac rB
+DisMac r29
+EltecM rB
+EltecM rE
+EltecM rF
+EltecM r27
+FisTecM r36
+TecMecI rB
+TecMecI r37
+DisAss rE
+DisAss r31
+ProMac rD
+ProMac r29
+MecSol r31
+MecSol r36
+Fluido r36
+IngChi rL
+CamEle rA
+CamEle rE
+CamEle rF
+CamEle r29
+CamEle r31
+AziEle r27
+AziEle r29
+AziEle r31
+AziEle r37
+EcoOrg rF
+EcoOrg r27
+EcoOrg r30
+EcoOrg r31
+EcoOrg r36
+EcoOrg r37
+EleInd rE
+EleInd rL
+EleInd r31
+CCIAA2 r30
+CCIAA2 r36
+CCIAA3 rA
+CCIAA3 r27
+CCIAA3 r30
+Chimica rE
+Chimica r37
+Inglese rB
+Inglese rE
+Inglese rL
+Inglese r29
+Inglese r31
+Inglese2 rL
+
+END.
