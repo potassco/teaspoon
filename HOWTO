@@ -1,0 +1,107 @@
+####################################################################
+README                                                   2018-10-31
+####################################################################
+
+---------------------------------------------------------------------
+OUTLINE
+---------------------------------------------------------------------
+
+This package includes ASP encodings of the Curriculum-Based Course
+Timetabling (CB-CTT) Problem.
+The CB-CTT problem was used in the second International Timetabling
+Competition (ITC-2007, http://www.cs.qub.ac.uk/itc2007/).
+
+---------------------------------------------------------------------
+REQUIREMENTS
+---------------------------------------------------------------------
+
+- clingo 5.0.0 or higher
+  + https://potassco.org
+
+---------------------------------------------------------------------
+OPTIONAL REQUIREMENTS
+---------------------------------------------------------------------
+
+- Perl
+  + for decoding answer sets to solutions of ITC competition format
+- C++
+  + for validating solutions of ITC competition format
+
+---------------------------------------------------------------------
+* USAGE
+---------------------------------------------------------------------
+
+% clingo teaspoon.lp ud1.lp bench/Test_asp/toy.lp  > toy.log
+
+% ./bin/decode.perl toy.log > toy.sol
+
+% cat toy.sol
+Geotec rA 3 1
+Geotec rA 3 2
+SceCosC rA 1 3
+Geotec rA 4 3
+ArcTec rB 3 0
+ArcTec rB 2 1
+ArcTec rB 3 1
+TecCos rB 1 2
+TecCos rB 2 2
+TecCos rB 0 3
+Geotec rB 2 3
+SceCosC rB 4 3
+TecCos rC 0 2
+SceCosC rC 3 2
+TecCos rC 4 2
+Geotec rC 1 3
+
+% ./bin/validator UD1 bench/Test_ectt/toy.ectt toy.sol
+
+Violations of Lectures (hard) : 0
+Violations of Conflicts (hard) : 0
+Violations of Availability (hard) : 0
+Violations of RoomOccupation (hard) : 0
+Cost of RoomCapacity (soft) : 0
+Cost of MinWorkingDays (soft) : 0
+Cost of IsolatedLectures (soft) : 0
+
+Summary: Total Cost = 0
+
+---------------------------------------------------------------------
+NOTE
+---------------------------------------------------------------------
+
+This package includes the program bin/validator.cc that validates a
+solution for a CB-CTT instance for all the five formulations. This
+program was developed by Andrea Schaerf and Luca Di Gaspero.
+
+---------------------------------------------------------------------
+REFERENCES
+---------------------------------------------------------------------
+- Mutsunori Banbara, Katsumi Inoue, Benjamin Kaufmann, Tenda Okimoto,
+  Torsten Schaub, Takehide Soh, Naoyuki Tamura, and Philipp Wanko.
+  teaspoon: Solving the Curriculum-Based Course Timetabling Problems
+  with Answer Set Programming.
+  Annals of Operations Research, Springer. DOI: 10.1007/s10479-018-2757-7
+
+- Mutsunori Banbara, Takehide Soh, Naoyuki Tamura, Katsumi Inoue and Torsten Schaub. 
+  Answer Set Programming as a Modeling Language for Course Timetabling.
+  Theory and Practice of Logic Programming, 13(4-5):783-798, 
+  Cambridge Journals, 2013. DOI: 10.1017/S1471068413000495
+
+- Alex Bonutti, Fabio De Cesco, Luca Di Gaspero, and Andrea Schaerf.
+  Benchmarking curriculum-based course timetabling: formulations,
+  data formats, instances, validation, visualization, and results.
+  Annals of Operations Research, 194(1), pp.59-70, Springer, 2012.
+  http://dx.doi.org/10.1007/s10479-010-0707-0
+
+---------------------------------------------------------------------
+AUTHORS
+---------------------------------------------------------------------
+- Mutsunori Banbara
+  Graduate School of Informatics, Nagoya University
+  banbara@nagoya-u.jp
+
+- Naoyuki Tamura
+  Information Science and Technology Center, Kobe University
+  tamura@kobe-u.ac.jp
+
+Enjoy!
